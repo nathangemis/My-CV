@@ -1,0 +1,113 @@
+body {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns:  25% 25% 25% 25%;
+    grid-template-rows:  80% 20%;
+    grid-template-areas: 
+    "aboutme aboutme aboutme aboutme" 
+    "skills skills skills skills";
+    background: -moz-linear-gradient(left, rgba(255,202,191,1) 0%, rgba(157,123,250,1) 51%, rgba(121,224,252,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,202,191,1)), color-stop(51%, rgba(157,123,250,1)), color-stop(100%, rgba(121,224,252,1)));
+    background: -webkit-linear-gradient(left, rgba(255,202,191,1) 0%, rgba(157,123,250,1) 51%, rgba(121,224,252,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,202,191,1) 0%, rgba(157,123,250,1) 51%, rgba(121,224,252,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,202,191,1) 0%, rgba(157,123,250,1) 51%, rgba(121,224,252,1) 100%);
+    background: linear-gradient(to right, rgba(255,202,191,1) 0%, rgba(157,123,250,1) 51%, rgba(121,224,252,1) 100%);
+    width: 100vw;
+    margin: 0px;
+}
+
+
+.aboutme {
+    grid-area: aboutme;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    color: white;
+
+}
+
+.aboutme .photo {
+    height: 150px;
+    widows: 150px;
+    border-radius: 100%;
+    border: 1px solid rgb(145, 145, 145);
+}
+
+.aboutme p {
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.skills {
+  grid-area: skills;
+  display: flex;
+  /* text-align: center ; */
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+
+}
+.skills .icon div img {
+    height: 60%;
+    width : 60%;
+
+}
+
+
+.skills .icon div:hover {
+   
+    animation: colorhover 0.2s forwards ease-in;
+
+}
+
+@keyframes colorhover {
+
+    from {
+        filter: invert(0);
+    }
+    to {
+        filter: invert(.6)
+    }
+}
+
+
+.skills .icon {
+
+    display: flex;
+    text-align: center;
+    
+}
+
+.skills .icon div p {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+
+    .skills .icon {
+
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutme {
+        height: 100vh;
+    }
+
+
+
+    .aboutme p {
+      
+        margin-bottom : 50px;
+    }
+    .skills {
+        height: 100vh;
+    }
+        
+ 
+
+
+}
