@@ -14,6 +14,7 @@ body {
     background: linear-gradient(to right, rgba(255,202,191,1) 0%, rgba(157,123,250,1) 51%, rgba(121,224,252,1) 100%);
     width: 100vw;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 
