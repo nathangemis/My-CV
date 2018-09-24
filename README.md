@@ -4,6 +4,6 @@
 
 Here is a design idea for an online CV coded in HTML and CSS
 
-You can see the results by clicking on the linc
+You can see the results by clicking on the link below.
 
-file:///home/user/Desktop/Becode/My-CV/index.html
+https://nathangemis.github.io/My-CV/
